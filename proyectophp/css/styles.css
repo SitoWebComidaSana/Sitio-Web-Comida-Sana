@@ -1,0 +1,80 @@
+div#pricipal {
+ 
+width:960px;
+    height:120px;
+    margin:0 auto;
+	background-color: green;
+top: 500px;
+}
+div#secundario {
+ 
+	width:960px;
+    	height:400px;
+   	margin:0 auto;
+	background-color: yellow;
+	top: 621px;
+	background:url("../images/pattern.png")
+
+
+}
+
+div#secundario1 {
+ 
+	width:480px;
+    	height:380px;
+   
+	background-color: blue;
+	top: 621px;
+	float: left;
+	background: #C1F7C2 url("../images/pattern.png")
+
+}
+div#secundario11 {
+ width:460px;
+     height:240px;
+     position:relative;
+     left:50%;
+     top:50%;
+     margin:-140px 0 0 -230px;
+background-color: white;
+background: url("../images/producto.png")
+
+}
+div#secundario12 {
+	width:460px;
+     height:100px;
+     position:relative;
+     left:50%;
+     top:340px;
+     margin:-140px 0 0 -230px;
+
+
+
+}
+div#secundario2 {
+ 
+	width:480px;
+    	height:380px;
+   
+	background-color: red;
+	top: 500px;
+	float:left;
+	background: #C1F7C2 url("../images/pattern.png")
+}
+div#secundario21 {
+ width:460px;
+     height:280px;
+     position:relative;
+     left:50%;
+     top:50%;
+     margin:-140px 0 0 -230px;
+	background-color: white;
+
+}
+h2{
+text-align: center;
+font-weight: bold;
+font-size:20pt;
+font-color=red;
+
+}
