@@ -4,35 +4,8 @@
   
   
   <title>Position : Absolute, Relative, Fixed</title>
+<link rel="stylesheet" href="css/style.css">
 
-<style>
-
-body{
-  text-align: left;
-  }
- 
-#div1{
- background-color: #CCCCCC;
- color: #039;
- text-align: center;
- height: 900px;
- width: 1000px;
- margin-left:auto;
- margin-right:auto;
-}
-
-
-#div2{
- background-color: #99FF99;
- color: #039;
- text-align: center;
- height: 600px;
- width: 500px;
- margin-left:auto;
- margin-right:auto;
-}
-
-</style>
 </head>
 
 
@@ -54,7 +27,8 @@ body{
      </p>
      
      <p>
-     <label for="passwd">  Contraseña </label>
+    <label for="passwd">Contrase&ntilde;a</label>
+
      <input type="password" name="passwd" id="passwd"
      placeholder="qwe2458"
      pattern="[a-z] {3} [0-9] {4}"
@@ -72,7 +46,19 @@ body{
      <input type="mail" name="mail" id="mail" 
      placeholder="ejemplo@gmail.com">
      </p>
+
+
+     <p>
+      <label for="address"> Direccion Domicilio </label>
+      <input type="address" name="address" id="address" 
+      placeholder="Plaza Dañin y Albatros">
+     </p>      
      
+     <p>
+      <label for="Motive"> Motivo de Registro </label>
+      <input type="Motive" name="Motive" id="Motive" 
+      placeholder="Plaza Dañin y Albatros">
+     </p> 
 		
      <input type="submit" value="Crear">
     </form>	
