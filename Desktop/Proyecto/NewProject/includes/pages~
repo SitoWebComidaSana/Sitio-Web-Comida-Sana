@@ -1,7 +1,0 @@
-<?php
-if (!isset($_GET['page'])) {
-    include("pages/services.php");
-} else {
-    include("pages/".$_GET['page'].".php");
-}
-?>
