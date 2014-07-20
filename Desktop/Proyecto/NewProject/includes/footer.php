@@ -1,0 +1,11 @@
+<?php ?>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrap-footer">
+		<div class="copyright">
+		<p>Copyright © 2014 <a href="http://www.edcom.espol.edu.ec" target="_blank">www.edcom.espol.edu.ec</a></p>
+		</div>
+	</div>
+</footer>
+
+</body></html>
