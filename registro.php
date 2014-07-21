@@ -59,7 +59,7 @@ Formulario de Registro
       </div>
      </fieldset>
      <div>
-     <button type="submit">  submit  </button>
+     <button type="submit">  Registrar  </button>
 	 </div>
 
     </form>	
