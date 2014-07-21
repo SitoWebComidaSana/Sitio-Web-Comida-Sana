@@ -107,12 +107,6 @@ nav .wrap-nav{height: 58px;background:#1D911F; border:3px solid #1D911F;}
 
 .block{ margin:10px;}
 
-.linblock {
-  padding: 10px;
-  background: #f60;
-  display: inline-block;
-  width: 150px;
-  }
 #main-content{}
 #main-content article{clear: both;}
 #main-content article .heading{}
@@ -175,24 +169,3 @@ footer {background-color:#333;}
 	background: -webkit-linear-gradient(top, #ddd, #aaa);	background: -moz-linear-gradient(top, #ddd, #aaa);
 	background: -ms-linear-gradient(top, #ddd, #aaa);	background: -o-linear-gradient(top, #ddd, #aaa);
 	background: linear-gradient(top, #ddd, #aaa);	border: 2px solid #999;}
-#div1{
- background-color: #CCCCCC;
- color: #039;
- text-align: center;
- height: 900px;
- width: 1000px;
- margin-left:auto;
- margin-right:auto;
-}
-
-
-#div2{
- background-color: #99FF99;
- color: #039;
- text-align: center;
- height: 600px;
- width: 500px;
- margin-left:auto;
- margin-right:auto;
-}
-
