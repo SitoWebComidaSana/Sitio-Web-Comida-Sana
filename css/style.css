@@ -107,6 +107,12 @@ nav .wrap-nav{height: 58px;background:#1D911F; border:3px solid #1D911F;}
 
 .block{ margin:10px;}
 
+.linblock {
+  padding: 10px;
+  background: #f60;
+  display: inline-block;
+  width: 150px;
+  }
 #main-content{}
 #main-content article{clear: both;}
 #main-content article .heading{}
