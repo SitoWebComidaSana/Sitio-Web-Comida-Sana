@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-  <meta charset="uft-8">
-  <title>Formulario</title>
-<Link  rel = "stylesheet"  href = "css / style.css" >
-</head>
+<?php
+    include("includes/top_page.php");
+?>
+<!--------------Header--------------->
+<header>
+<?php include("../NewProject/includes/logo.php"); ?>
+</header>
+<nav>
+	<div class="wrap-nav zerogrid">
+		<?php include("../NewProject/includes/menu.php"); ?>		
+		<?php include("../NewProject/includes/social.php"); ?>
+</nav>
+
 <body>
 Formulario de Registro
 <div  id = "div1" >
@@ -60,4 +66,12 @@ Formulario de Registro
 </div>
 </div>
 </body>
+ <br style="clear:both;" />
+
+    </div>
+    <div id="footer">   	   
+	    <?php include("includes/footer.php"); ?>        
+    </div>
+</div>
+<?php include("includes/bottom_page.php"); ?>
 </html>
