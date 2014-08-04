@@ -12,13 +12,13 @@ $objeto->Conectar();
 
 $usu_correo = $_POST["email"];	
 $usu_clave = $_POST["password"];$usu_clave = base64_encode($usu_clave);	
-
-//Prcoeso por iniciar sesion	
+	
 if (isset($_POST["iniciar_sesion"]))
 {
 	
 	include_once('ClsSesion.php'); //esta es la ruta donde esta la pagina php
-	$objeto = new ClsSesion();	//instancio el objeto			
+	$objeto = new ClsSesion();	//instancio el objeto
+			
 	$objeto ->setTabla("usuario");			
 	$objeto ->setTbl_correo("usu_correo");
 	$objeto ->setTbl_clave("usu_clave");
@@ -35,22 +35,22 @@ if (isset($_POST["iniciar_sesion"]))
 				$_SESSION["usuario"] = $usu_correo;	$_SESSION["nombre"] = $row['usu_nombre'];			
 			}
 		header('Location: ../byb_account-my-orders.html');
-	}	
+	}
+	
+	
 }
-
-
-//Proceso por solicitar clave
 if (isset($_POST["enviar_clave"]))
 {
-
+	
 	include_once('ClsSesion.php'); //esta es la ruta donde esta la pagina php
-	$objeto = new ClsSesion();	//instancio el objeto		
+	$objeto = new ClsSesion();	//instancio el objeto
+			
 	$objeto ->setTabla("usuario");			
 	$objeto ->setTbl_correo("usu_correo");
 	$objeto ->setCorreo($usu_correo);
 	$contar = $objeto->validar_usuario();		
 	
-	//Si solicita y NO esta regiostrado
+
 	if($contar == 0){		
 		 require_once "../form/vendor/class.phpmailer.php"; 
 		  $mail = new phpmailer();
@@ -73,20 +73,20 @@ if (isset($_POST["enviar_clave"]))
 			  $intentos=$intentos+1;	
 		  }
 		  header('Location: ../byb_fail.html');
-	//Si solicita y esta regiostrado
+		
 	}else{
 		  require_once "../form/vendor/class.phpmailer.php"; 
 		  $mail = new phpmailer();
 		  $mail->From = "info@comidasana.net"; // dirección de correo y el nombre de usuario de la empresa
 		  $mail->FromName = "Comida Sana";$mail->Timeout=30;
 		  $mail->AddAddress($usu_correo);			
-		  $mail->Subject = "Hola@ ".$objeto -> getNombreUsuario().' '.$objeto -> getApellidoUsuario();  //asunto y cuerpo del mensaje en html
+		  $mail->Subject = "Hola@ ".$row['usu_nombre'].' '.$row['usu_apellido'];  //asunto y cuerpo del mensaje en html
 		  $mail->Body = "<b>Mensaje desde Comida Sana</b> <br><br><br>
 			  <h1>Te recordamos tus datos</h1> <br>
 			  <h2>Informacion de Contacto: :</h2>  <br>
-			  <b>Correo: ".$objeto -> getCorreo()."</b> <br>
-			  <b>Clave: ". base64_decode($objeto -> getClave())."</b> <br>
-			  <b>Fecha en que te unistes a nosotros: ".$objeto -> getFechaCreacionUsuario() ."</b> <br><br><br><hr>
+			  <b>Correo: ".$row['usu_correo']."</b> <br>
+			  <b>Clave: ". base64_decode($row['usu_clave'])."</b> <br>
+			  <b>Fecha en que te unistes a nosotros: ".$row['usu_fecha_creacion']."</b> <br><br><br><hr>
 			  Has recibido este mensaje porque olvidaste tu clave para iniciar sesion en nuestro sitio<br><br><br>  
 			  <span >&copy; 2014 www.edcom.espol.edu.ec</span>";
 		  $mail->AltBody = "Mensaje de confirmacion de registro";
