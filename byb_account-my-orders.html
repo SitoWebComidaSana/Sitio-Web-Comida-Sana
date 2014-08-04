@@ -1,6 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
     <meta charset="utf-8">
     <meta name="description" content=" ">
     <meta name="author" content=" ">
@@ -15,28 +14,29 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-   	<link rel="stylesheet" href="_css/style.css">
+	<link rel="stylesheet" href="_css/style.css">
    	<link rel="stylesheet" href="_css/responsive.css">
 
 </head>
 <body>
 <div class="wrapper">
+
   <header id="MainNav">
     <div class="container">
       <div class="row">
         <section class="col-md-12" id="TopBar">
-           <div id="usuario"></div>
-
+           <div id="usuario">
+          </div>          
 
           <!-- SHOPPING CART -->
           <div class="shopping-cart-widget pull-right">
             <button type="button" class="btn btn-link pull-right">
-               <span aria-hidden="true" data-icon="&#xe006;"></span> <span id="item"></span> <b class="caret"></b>
+              <span aria-hidden="true" data-icon="&#xe006;"></span>  <span id="item"></span> <b class="caret"></b>
             </button>
             <div role="complementary">
                <div class="clearfix"></div>
                 <div id="s_cdc"></div>
-            </div>            
+            </div>             
           </div>
           <!-- !SHOPPING CART -->
         </section>
@@ -78,6 +78,7 @@
 
   <section id="Content" role="main">
       <div class="container">
+
           <!-- SECTION EMPHASIS 1 -->
           <!-- FULL WIDTH -->
       </div><!-- !container -->
@@ -86,13 +87,15 @@
               <header class="row">
                   <div class="col-md-12">
                       <h1 class="strong-header pull-left">
-                          Mi Cuenta
+                          MI cuenta
                       </h1>
                       <!-- BREADCRUMBS -->
                       <ul class="breadcrumbs list-inline pull-right">
-                          <li><a href="index.html">Inicio</a></li><!--
-                         <li><a href="03-shop-products.html">xXxShopxXx</a></li> --><!--
-                          --><li>Mi Cuenta</li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <!--<li><a href="03-shop-products.html">Tienda</a></li>-->
+                        <!--
+                          -->
+                        <li>Mi Cuenta</li>
                       </ul>
                       <!-- !BREADCRUMBS -->
                   </div>
@@ -103,44 +106,21 @@
           <!-- !FULL WIDTH -->
           <!-- !SECTION EMPHASIS 1 -->
 
-          <div class="row">
-              <div class="col-md-6 space-right-20">
-                  <section class="login element-emphasis-strong">
-                      <h2 class="strong-header large-header">
-                          Iniciar Sesi&oacute;n
-                      </h2>                     
-                      <form role="form" action="php/isu_proceso.php" method="post" class="validateIt" data-show-errors="true" data-hide-form="false">
-                          <div class="form-group">
-                              <label for="email">Correro Electronico</label>
-                              <input type="email" class="form-control" id="email" name="email" required>
-                          </div>
-                          <div class="form-group">
-                              <label for="password">Contraseña</label>
-                              <input type="password" class="form-control" id="password" name="password" >
-                          </div>
-	                          <!--  <button type="submit" class="btn btn-primary pull-left">Login</button>
-                              		<a href="#" class="btn btn-link pull-right">Olvido su contraseña?</a>-->
-                          	<input type="submit" name="iniciar_sesion" class="btn btn-primary pull-left" value="Login">
-                          	<input type="submit" name="enviar_clave" class="btn btn-link pull-right"value="Olvido su contraseña?"> 
-                          <div class="clearfix"></div>
-                      </form>
-                         
-                  </section>
+          <section class="row">
+              <div class="col-sm-3">
+                  <nav class="shop-section-navigation element-emphasis-weak">
+                      <ul class="list-unstyled">
+                      
+      <li><a href="cuenta-perfil.html">INFORMACIÓN DE LA CUENTA</a></li>
+      <li class="active"><span>MIS PEDIDOS</span></li>
+      <li><a href="javascript:logout();">LOGOUT</a></li>
+       
+                      </ul>
+                  </nav>
               </div>
-              <div class="col-md-6 space-left-20">
-                  <section class="element-emphasis-weak">
-                      <h2 class="strong-header">
-                          Clientes nuevos
-                      </h2>
-                      <p>
-                          Al crear una cuenta en nuestra tienda, usted será capaz de realizar el proceso de compra más rápidamente, almacenar varias direcciones de envío, ver y hacer un seguimiento de sus pedidos en su cuenta y más                                                    
-                      </p>
-                      <a href="byb_registro.html" class="btn btn-default">
-                          Registrar
-                      </a>
-                  </section>
-              </div>
-          </div>
+              <div class="clearfix visible-xs space-30"></div>
+              <div id="datos"></div>
+          </section>
       </div>
   </section>
 
@@ -148,7 +128,8 @@
 
 <footer>
   <div class="container">
-  <hr>    
+  <hr>
+    
     <section class="row">
       <div class="col-md-12">
         <span class="copyright pull-left">&copy; 2014 www.espol.edu.ec</span>
@@ -181,9 +162,7 @@
 
 <script src="js/main.js"></script>
 <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+<!--<script src="js/s_su_ai.js"></script>-->
 
-<!--
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/s_cdc.js"></script>	-->
 </body>
 </html>
