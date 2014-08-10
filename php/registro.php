@@ -5,14 +5,15 @@ if (!$ajax) {
 	echo "Please enable Javascript";
 	exit;
 }
-
-
 	$usu_apellido = $_POST["apellido"];	$usu_nombre = $_POST["nombre"];	$usu_correo = $_POST["correo"];	
 	$usu_clave = $_POST["clave"];	$usu_clave = base64_encode($usu_clave);
+	$usu_motivo_registro = $_POST["motivo"];	
+	$usu_sexo=$_POST["rd1"];
+	
 		
 	include_once('InstConexion.php');	$objeto = new  InstConexion();	$objeto->Conectar();
-$sql="INSERT INTO `u882124156_food`.`usuario` (`usu_nombre`, `usu_apellido`, `usu_correo`, `usu_clave`, `usu_estado`) 
-VALUES ('".$usu_nombre."','".$usu_apellido."','".$usu_correo."','".$usu_clave."', 1)";
+	$sql="INSERT INTO `u882124156_food`.`usuario` (`usu_nombre`, `usu_apellido`, `usu_correo`, `usu_clave`, `usu_estado`, `usu_motivo_registro`, `usu_sexo`) 
+VALUES ('".$usu_nombre."','".$usu_apellido."','".$usu_correo."','".$usu_clave."', 1, '".$usu_motivo_registro."', '".$usu_sexo."')";
 
 	$result = @mysql_query($sql);	
 
@@ -32,8 +33,8 @@ if ($result){// Envio de Correo de confirmacion
    	      <b>Correo: ".$_POST["correo"]."</b> <br>
   	      <b>Clave: ".$_POST["clave"]."</b> <br><br><br>
 		  <hr>
-		  Has recibido este mensaje porque creaste una cuenta con nosotros<br><br><br>  
- <span >&copy; 2014 www.edcom.espol.edu.ec</span>";// Informacion de Contacto: <br> Correo electronico: ".$usu_correo."<br> ";
+		  Has recibido este mensaje porque creaste una cuenta con nosotros<br><br><br> 
+		  <span >&copy; 2014 www.edcom.espol.edu.ec</span>";// Informacion de Contacto: <br> Correo electronico: ".$usu_correo."<br> ";
 	  $mail->AltBody = "Mensaje de confirmacion de registro";
 
 	  $exito = $mail->Send();
