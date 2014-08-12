@@ -1,13 +1,13 @@
 <?php 
-include_once("ingrediente_collector.php");
+include_once("PlatoCollector1.php");
 
 $id =1;
 
-$ingrediente_collectorObj = new ingrediente_collector();
+$forma_pagocollectorObj = new PlatoCollector();
 
-foreach ($ingrediente_collectorObj->mostrar() as $c){
+foreach ($Forma_pagocollector->mostrar() as $c){
   echo "<div>";
-  echo $c->getIdingrediente() . "  && " .$c->getDescripcion();                                     
+  echo $c->getPag_codigo() . "  && " .$c->getPag_descripcion(). "&&" .$ c->getPago_estado
   echo "</div>"; 
 }
 
