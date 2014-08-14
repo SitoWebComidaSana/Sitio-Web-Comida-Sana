@@ -1,0 +1,56 @@
+<?php
+
+class notas
+{
+	
+	private $id;
+	private $nombre;  
+	private $parcial;
+	private $finaln;
+	private $mejoramiento;
+	private $promedio;
+
+	
+	function __construct($id, $nombre, $parcial, $finaln, $mejoramiento, $promedio)
+	{
+		$this->id = $id;
+		$this->nombre = $nombre;
+		$this->parcial = $parcial;
+		$this->finaln = $finaln;
+		$this-> mejoramiento= $mejoramiento;
+		$this->promedio = $promedio;
+	}
+
+	
+	function getid()
+	{
+		return $this->id;
+	}
+
+
+	function getnombre()
+	{
+		return $this->nombre;
+	}
+
+  function getparcial()
+	{
+		return $this->parcial;
+	}
+	function getfinanl()
+	{
+		return $this->finaln;
+	}
+	function getmejoramiento()
+	{
+		return $this->mejoramiento;
+	}
+	function getpromedio()
+	{
+		return $this->promedio;
+	}
+	
+}
+
+
+?>
