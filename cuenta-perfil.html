@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+
+    <title>Build Your Bike - Login</title>
+
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="_css/style.css">
+   	<link rel="stylesheet" href="_css/responsive.css">
+
+</head>
+<body>
+<div class="wrapper">
+
+  <header id="MainNav">
+    <div class="container">
+      <div class="row">
+        <section class="col-md-12" id="TopBar">
+           <div id="usuario">
+          </div>          
+
+          <!-- SHOPPING CART -->
+          <div class="shopping-cart-widget pull-right">
+            <button type="button" class="btn btn-link pull-right">
+              <span aria-hidden="true" data-icon="&#xe006;"></span>  <span id="item"></span> <b class="caret"></b>
+            </button>
+            <div role="complementary">
+               <div class="clearfix"></div>
+                <div id="s_cdc"></div>
+            </div>             
+          </div>
+          <!-- !SHOPPING CART -->
+        </section>
+          <nav class="navbar navbar-default">
+
+		<div class="navbar-header">             
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=" "></a>
+        </div>
+
+		<div class="">
+			<div class="menu navbar-collapse navbar-main-collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a></li>           
+				<li class="dropdown"> <a href="menu.html" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a></li>
+				<li class="dropdown"> <a href="byb_preguntas.html" class="dropdown-toggle" data-toggle="dropdown">Testimonios<b class="caret"></b></a></li>
+				<li class="dropdown"> <a href="servicio.html" class="dropdown-toggle" data-toggle="dropdown">Servicios<b class="caret"></b></a></li>
+				<li class="dropdown"> <a href="contacto.html" class="dropdown-toggle" data-toggle="dropdown">Contacto<b class="caret"></b></a></li>
+			  </ul>
+			</div>
+		
+		
+			<div class="minimenu"><div>MENU</div>
+				<select onchange="location=this.value">
+                <option></option>
+					<option value="index.html">Inicio</option>
+					<option value="menu.html">Menu</option>
+					<option value="byb_preguntas.html">Testimonios</option>
+					<option value="servicio.html">Servicios</option>
+					<option value="contacto.html">Contacto</option>
+				</select>
+			</div>		
+		</div>
+
+        <!-- /.navbar-collapse -->
+      </nav>
+	  </div>
+    </div>
+  </header>
+
+  <section id="Content" role="main">
+      <div class="container">
+
+          <!-- SECTION EMPHASIS 1 -->
+          <!-- FULL WIDTH -->
+      </div><!-- !container -->
+      <div class="full-width section-emphasis-1 page-header">
+          <div class="container">
+              <header class="row">
+                  <div class="col-md-12">
+                      <h1 class="strong-header pull-left">
+                          MI cuenta
+                      </h1>
+                      <!-- BREADCRUMBS -->
+                      <ul class="breadcrumbs list-inline pull-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <!--<li><a href="03-shop-products.html">Tienda</a></li>-->
+                        <!--
+                          -->
+                        <li>Mi Cuenta</li>
+                      </ul>
+                      <!-- !BREADCRUMBS -->
+                  </div>
+              </header>
+          </div>
+      </div><!-- !full-width -->
+      <div class="container">
+          <section class="row">
+              <div class="col-sm-3">
+                  <nav class="shop-section-navigation element-emphasis-weak">
+                      <ul class="list-unstyled">
+						<li class="active"><span>INFORMACIÓN DE LA CUENTA</span></li>          
+						<li><a href="byb_account-my-orders.html">MIS PEDIDOS</a></li>     
+						<li><a href="javascript:logout();">LOGOUT</a></li>       
+                      </ul>
+                  </nav>
+              </div>
+              <div class="clearfix visible-xs space-30"></div>
+              
+			  <div id="datos"></div>
+          
+		  </section>
+      </div>
+  </section>
+
+  <div class="clearfix visible-xs visible-sm"></div> <!-- fixes floating problems when mobile menu is visible -->
+
+<footer>
+  <div class="container">
+  <hr>
+    
+    <section class="row">
+      <div class="col-md-12">
+        <span class="copyright pull-left">&copy; 2014 www.espol.edu.ec</span>
+        <ul class="payment-methods list-inline pull-right">
+		        <li><a href="#"><img src="images/rss-icon.png" title="RSS"/></a></li>
+				<li><a href="#"><img src="images/twitter-icon.png" title="Twitter"/></a></li>
+				<li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>               
+				<li><a href="#"><img src="images/pinterest-icon.png" title="Pinterest"/></a></li>			
+        </ul>
+      </div>
+    </section>
+  </div>
+</footer>
+
+</div>
+
+<!-- SCRIPTS -->
+<!-- core -->
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- !core -->
+
+<!-- plugins -->
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+<!-- !plugins -->
+
+<script src="js/main.js"></script>
+<script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+<script src="js/perfil.js"></script>
+
+</body>
+</html>
