@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>formulario </title>
+</head>
+<body>
+
+<?php
+//obtener el valor de ID que viene del metodo GET a traves de HTTP
+$id=$_GET["idplato"];
+include_once("PlatoCollector.php");
+include_once("plato.php");
+$PlatoCollectorObj = new PlatoCollector();
+$ObjPlato = $PlatoCollectorObj->show($id);
+?>
+<h2>Editar Objeto  </h2>
+<form action="editar.php" method="post" >
+<p>
+Id: <input type="text" name="idplato" value="<?php echo $ObjDemo->getIdplato(); ?>" readonly />
+</p>
+
+<p>
+Nombre: <input type="text" name="nombre"  value="<?php echo $ObjPlato->getNombre(); ?>" autofocus required />
+
+
+</p>
+<p>
+Descripcion: <input type="text" name="descripcion"  value="<?php echo $ObjPlato->getDescripcion(); ?>" autofocus required />
+</p>
+<a href="index.php">Cancelar</a>
+<input type="submit" value="Guardar" />
+
+</form>
