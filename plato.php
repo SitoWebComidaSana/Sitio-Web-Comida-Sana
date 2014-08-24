@@ -1,5 +1,5 @@
 <?php
-class plato{
+class plato {
  private $pla_codigo;
  private $pla_nombre;
  private $pla_descripcion;
@@ -10,35 +10,50 @@ class plato{
   $this->pla_idplato = $idplato;
   $this->pla_nombre = $nombre;
   $this->pla_descripcion = $descripcion; 
-  $this->pla_precio = $descripcion;  
-  $this->descripcion = $descripcion; 
+  $this->pla_precio = $pla_precio;  
+  $this->pla_estado = $pla_estado; 
   }
   
-  function setidPlato(idplato){
-    $this->idplato= $idplato;
+  function setPla_codigo(idplato){
+    $this->pla_codigo= $idplato;
   }
  
-  function getIdplato(){
-    return $this->idplato;
+  function getPla_codigo(){
+    return $this->pla_codigo;
   }  
   
  
   
-  function setNombre(nombre){
-    $this->nombre= $nombre;
+  function setPla_nombre(nombre){
+    $this->pla_nombre= $nombre;
   }
   
-  function getNombre(){
-    return $this->nombre;
+  function getPla_nombre(){
+    return $this->pla_nombre;
   }
  
-  function setDescripcion(descripcion){
-    $this->descripcion= $descripcion;  }  
+  function setPla_descripcion(descripcion){
+    $this->pla_descripcion= $descripcion;  }  
   
-  function getDescripcion(){
-    return $this->Descripcion;
+  function getPla_descripcion(){
+    return $this->pla_escripcion;
   }
   
+  function setPla_precio(precio){
+    $this->pla_precio= $precio; 
+  }  
+  
+  function getPla_precio(){
+    return $this->pla_descripcion;
+  }
+
+  function setPla_estado(estado){
+    $this->pla_estado= $estado; 
+  }  
+  
+  function getPla_estado(){
+    return $this->pla_estado;
+  }
 }
  
 ?>
