@@ -5,6 +5,7 @@
 <body>
 <div id="main">
 <?php
+<<<<<<< HEAD
 $valor=$_POST["enf_descripcion"];
 //$valor="manuel";
 echo 'Enfermedad : ' . htmlspecialchars($valor) . '!';
@@ -47,6 +48,21 @@ echo "valor agregado </br>";
 <
 ?>
 <div><a href="index.php">Volver al Inicio</a></div>
+=======
+$valor=$_POST["nombre"];
+$valor2=$_POST["apellido"];
+$valor3=$_POST["imagen"];
+echo $valor3;
+
+include_once("DemoCollector.php");
+
+$DemoCollectorObj = new DemoCollector();
+$DemoCollectorObj->createDemo($valor, $valor2, $valor3);
+
+
+?>
+
+>>>>>>> a3fecae8413a96fd1df6e43b6b218b76e7250b8c
 </div>
 </body>
 </html>

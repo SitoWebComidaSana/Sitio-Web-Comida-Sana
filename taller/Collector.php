@@ -4,8 +4,13 @@ include_once('dataBase.php');
 // Define configuration
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
+<<<<<<< HEAD
 define("DB_PASS", "Estud1ante");
 define("DB_NAME", "comida");
+=======
+define("DB_PASS", "root");
+define("DB_NAME", "prueba");
+>>>>>>> a3fecae8413a96fd1df6e43b6b218b76e7250b8c
 
 
 class Collector extends dataBase

@@ -2,6 +2,7 @@
 
 class Demo
 {
+<<<<<<< HEAD
     private $enf_codigo;
     private $enf_descripcion;
     
@@ -32,3 +33,42 @@ class Demo
 }
 
 ?> 
+=======
+   
+    private $nombre;
+    private $apellido;
+	private $imagen;
+     function __construct($nombre, $apellido, $imagen) {
+       
+       $this->nombre = $nombre;
+	   $this->apellido = $apellido;
+	   $this->imagen = $imagen;
+     }
+    
+   
+     
+     function setNombre($nombre){
+       $this->nombre = $nombre;
+     } 
+     function getNombre(){
+       return $this->nombre;
+	   
+     } 
+	 
+	 function setApellido($apellido){
+       $this->apellido = $apellido;
+     } 
+     function getApellido(){
+       return $this->apellido;
+	   
+	 function setImagen($imagen){
+       $this->imagen = $imagen;
+     } 
+     function getImagen(){
+       return $this->imagen;
+	   
+	   
+}
+}
+?> 
+>>>>>>> a3fecae8413a96fd1df6e43b6b218b76e7250b8c
