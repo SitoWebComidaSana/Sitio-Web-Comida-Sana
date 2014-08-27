@@ -1,14 +1,19 @@
 <?php
-include database.php;
-include plato.php;
-class PlatoCollector1 {
+include_once ('database.php');
+include_once('Collector.php');
+include_once ('plato.php');
+
+class PlatoCollector1 extends Collector {
 
 
 
 
-   function createPlato($nombre) {    
-    $insertrow = self::$db->insertRow("INSERT INTO proyecto.plato ( nombre, descripcion,imagen) VALUES (?, ?, ?)", array("{$nombre}","{$descripcion}", "{$imagen}"));
+  public  function createPlato($nombre) {    
+     
+$insertrow = self::$db->insertRow("INSERT INTO proyecto.plato ( nombre, descripcion,imagen) VALUES (?, ?, ?)", array("{$nombre}","{$descripcion}", "{$imagen}"));
+
   }  
+
   public function mostrar()
     {
         $objConexion=new clsConexion();
