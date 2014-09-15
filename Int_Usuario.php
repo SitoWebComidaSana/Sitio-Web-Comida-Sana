@@ -427,7 +427,7 @@
                                   </a>
                                   <div class="overlay-contents">
                                       <div class="shop-item-actions">
-                                          <button class="btn btn-primary btn-block btn-small">
+                                          <button onclick="add(1)" class="btn btn-primary btn-block btn-small">
                                               Add to cart
                                           </button>
                                       </div>
